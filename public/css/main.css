@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
+
+body {
+  font-family: 'Merriweather', serif;
+  min-height: 100%;
+  background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ee36d484-5409-4d54-a3b6-cce26377c006/d78czcc-a051b8be-778e-4d35-95ba-0299c991eea4.png/v1/fill/w_1024,h_579,q_80,strp/dark_rainbow_wallpaper_by_nbda_d78czcc-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD01NzkiLCJwYXRoIjoiXC9mXC9lZTM2ZDQ4NC01NDA5LTRkNTQtYTNiNi1jY2UyNjM3N2MwMDZcL2Q3OGN6Y2MtYTA1MWI4YmUtNzc4ZS00ZDM1LTk1YmEtMDI5OWM5OTFlZWE0LnBuZyIsIndpZHRoIjoiPD0xMDI0In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.hN1Gj4ns4lbOyQW1WzhQOM05afOsVo14T9LkUX-U53E');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+.navbar {
+  background-color: #15920f;
+  height: 53px;
+  padding-top: 0;
+}
+.jumbotron {
+  background: none;
+}
+.fas {
+  color: #171717;
+}
+.img-fluid {
+  height: 40px;
+}
+.fab {
+  color: #a21714;
+}
+.img {
+  height: 25vh;
+  border: 2px solid green;
+}
