@@ -12,6 +12,14 @@ app.get('/', function (req, res) {
   res.render('home');
 });
 
-app.listen(3000, function (req, res) {
+app.get('/projects', function (req, res) {
+  res.render('projects');
+});
+
+app.get('/contacts', function (req, res) {
+  res.render('contacts');
+});
+
+app.listen(process.env.PORT || 3000, function (req, res) {
   console.log('Server started...');
 });

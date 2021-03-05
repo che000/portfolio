@@ -14,13 +14,29 @@ body {
   height: 53px;
   padding-top: 0;
 }
+@media screen and (max-width: 500px) {
+  .navbar {
+    background-color: #15920f;
+    height: auto;
+    padding-top: auto;
+  }
+  .fas {
+    font-size: 20px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .letsCode,
+  .txt {
+    font-size: 12px;
+  }
+}
 .jumbotron {
   background: none;
 }
 .fas {
   color: #171717;
 }
-.img-fluid {
+.top-Img {
   height: 40px;
 }
 .fab {
@@ -29,4 +45,55 @@ body {
 .img {
   height: 25vh;
   border: 2px solid green;
+}
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+.contactMeForm {
+  max-width: 40%;
+  margin: 50px auto;
+}
+
+.contact {
+  color: #15920f;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid #a21714;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.contact:focus {
+  border: 2px solid #cc4949;
+}
+
+.myMessage {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+[type='submit'] {
+  font-family: sans-serif;
+  width: 30%;
+  background: #15920f;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: #171717;
+  font-size: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: -4px;
+  font-weight: bold;
+}
+[type='submit']:hover {
+  background: #a21714;
+  color: #171717;
 }
