@@ -10,13 +10,14 @@ body {
   background-attachment: fixed;
 }
 .navbar {
-  background-color: #15920f;
-  height: 53px;
+  background: rgb(187,23,43);
+  background: linear-gradient(90deg,  rgba(21,146,15,0.7) 43%, rgba(162,23,20,0.8) 53% );  
+  height: 50px;
   padding-top: 0;
 }
 @media screen and (max-width: 500px) {
   .navbar {
-    background-color: #15920f;
+    background: linear-gradient(90deg,  rgba(21,146,15,0.7) 43%, rgba(162,23,20,0.8) 53% );  
     height: auto;
     padding-top: auto;
   }
@@ -96,4 +97,9 @@ body {
 [type='submit']:hover {
   background: #a21714;
   color: #171717;
+}
+.myStack{
+  background: linear-gradient(90deg,  rgba(21,146,15,1) 43%, rgba(162,23,20,1) 53% );  
+  font-weight: bolder;
+  font-family: Roboto;
 }
