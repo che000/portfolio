@@ -26,10 +26,6 @@ body {
     margin-left: 0;
     margin-right: 0;
   }
-  .letsCode,
-  .txt {
-    font-size: 12px;
-  }
 }
 .jumbotron {
   background: none;
@@ -99,7 +95,7 @@ body {
   color: #171717;
 }
 .myStack{
-  background: linear-gradient(90deg,  rgba(21,146,15,0.8) 43%, rgba(162,23,20,0.9) 53% );  
+  background: linear-gradient(360deg,  rgba(21,146,15,0.8) 43%, rgba(162,23,20,0.9) 53% );  
   font-weight: bolder;
   font-family: Roboto;
 }
@@ -114,6 +110,6 @@ body {
 }
 
 svg{
-  fill:#14660a;
+  fill: #14660a;
   width: 50%;
 }

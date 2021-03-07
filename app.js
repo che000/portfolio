@@ -9,7 +9,7 @@ app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/', function (req, res) {
-  res.render('home');
+  res.render('landing');
 });
 
 app.get('/projects', function (req, res) {
@@ -20,8 +20,8 @@ app.get('/contacts', function (req, res) {
   res.render('contacts');
 });
 
-app.get('/landing', function (req, res){
-  res.render('landing');
+app.get('/home', function (req, res){
+  res.render('home');
 });
 
 app.listen(process.env.PORT || 3000, function (req, res) {
