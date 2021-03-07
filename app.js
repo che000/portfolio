@@ -20,6 +20,10 @@ app.get('/contacts', function (req, res) {
   res.render('contacts');
 });
 
+app.get('/landing', function (req, res){
+  res.render('landing');
+});
+
 app.listen(process.env.PORT || 3000, function (req, res) {
   console.log('Server started...');
 });
