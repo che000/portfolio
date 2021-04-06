@@ -1,29 +1,30 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const path = require('path');
+const express     = require('express');
+const bodyParser  = require('body-parser');
+const path        = require('path');
+const morgan    = require("morgan");
+const dotenv      = require("dotenv");
+
+//Load Config
+dotenv.config({path: "./config/config.env"});
+
 const app = express();
+
+
+//Logging
+if(process.env.NODE_ENV === "development"){
+  app.use(morgan("dev"));
+}
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get('/', function (req, res) {
-  res.render('landing');
-});
+app.use("/", require("./routes/index"));
 
-app.get('/projects', function (req, res) {
-  res.render('projects');
-});
 
-app.get('/contacts', function (req, res) {
-  res.render('contacts');
-});
+const PORT = process.env.PORT || 3000;
 
-app.get('/home', function (req, res){
-  res.render('home');
-});
-
-app.listen(process.env.PORT || 3000, function (req, res) {
-  console.log('Server started...');
-});
+app.listen(
+  PORT, 
+  console.log(`Server Started at ${process.env.NODE_ENV} mode on port ${PORT}`));
